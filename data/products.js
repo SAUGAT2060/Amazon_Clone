@@ -783,7 +783,7 @@ export function loadProductsFetch(){
 
   return response.json();
   }).then((productsData)=>{
-    console.log(productsData);
+    // console.log(productsData);
     
      products = productsData.map((productDetails)=>{
       if(productDetails.type === 'clothing'){
