@@ -799,9 +799,13 @@ export function loadProductsFetch(){
   
     
 
+  }).catch((error) =>{
+      console.log("Unexpected Error.Please try again later.");
   });
   return promise;
 }
+
+
 /*
 loadProductsFetch().then(() =>{
 
@@ -830,7 +834,16 @@ xhr.addEventListener('load',()=>{
 
 });
 
-xhr.open('GET', 'https://supersimplebackend.dev/products');
+xhr.addEventListener('error', (error) =>{
+
+console.log('Unexpected Error. Please try again later.');
+
+
+
+});
+
+
+xhr.open('GET', 'https://.supersimplebackend.dev/products');
 xhr.send();
 
-};
+}

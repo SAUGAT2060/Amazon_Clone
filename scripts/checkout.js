@@ -5,14 +5,23 @@ import {loadCart, loadFromStorage} from '../data/cart.js';
 
  async function loadPage(){
   
+  try{
+  //  throw 'error1';
+  await loadProductsFetch();
 
- await loadProductsFetch();
-
- await new Promise((resolve)=>{
+  const value = await new Promise((resolve,reject)=>{
+    // throw 'error2';
     loadCart(()=>{
-      resolve();
+      resolve('value3');
+    // reject('error3');
     });
   });
+  }
+  catch(error){
+  console.log("Unexpected Error.Please try again later.");
+  }
+
+ 
 
 renderOrderSummary();
 renderPaymentSummary();
