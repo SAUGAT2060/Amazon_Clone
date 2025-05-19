@@ -12,10 +12,10 @@ A fully functional and responsive Amazon-style e-commerce site built using HTML,
 ![Homepage](images/screenshots/homepage.png)
 
 ### 🛒 Checkout Page
-![Checkout](images/screenshots/checkout.png)
+![Checkout](images/screenshots/Checkout.png)
 
 ### 📦 Orders
-![Orders](images/screenshots/orders.png)
+![Orders](images/screenshots/Orders.png)
 
 ### 🚚 Delivery Tracking
 ![Tracking](images/screenshots/delivery-tracking.png)
