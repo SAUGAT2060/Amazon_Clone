@@ -843,7 +843,7 @@ console.log('Unexpected Error. Please try again later.');
 });
 
 
-xhr.open('GET', 'https://.supersimplebackend.dev/products');
+xhr.open('GET', 'https://supersimplebackend.dev/products');
 xhr.send();
 
 }
